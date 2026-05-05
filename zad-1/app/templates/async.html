@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Async Form</title>
+</head>
+<body>
+    <h2>Async Form</h2>
+
+    <form method="POST">
+        <input name="name" placeholder="Name" required />
+        <input name="surname" placeholder="Surname" required />
+        <button type="submit">Submit async</button>
+    </form>
+
+    {% if queued %}
+    <p>Task queued</p>
+    {% endif %}
+
+    <p><a href="/">Back</a></p>
+</body>
+</html>
